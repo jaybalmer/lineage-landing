@@ -32,7 +32,7 @@ export async function POST(request: Request) {
       subject: "You're in — welcome to Lineage",
       text: `Thanks for signing up. Lineage is a community platform I'm building to help people map the timelines of their lives inside the communities they love — starting with snowboarding.
 
-I'll keep you posted as we get closer to launch. In the meantime, you can check out the early prototype at https://lineage.wtf
+I'll keep you posted as we get closer to launch.
 
 — Jay`,
     });
