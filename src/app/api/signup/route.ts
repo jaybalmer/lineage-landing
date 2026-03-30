@@ -10,18 +10,20 @@ export async function POST(request: Request) {
     }
 
     const apiKey = process.env.RESEND_API_KEY;
-    const audienceId = process.env.RESEND_AUDIENCE_ID;
-    if (!apiKey || !audienceId) {
+    if (!apiKey) {
       return NextResponse.json({ error: "Server configuration error" }, { status: 500 });
     }
 
     const resend = new Resend(apiKey);
 
-    // Add to Resend audience
-    await resend.contacts.create({
-      email,
-      audienceId,
-    });
+    // Get default audience and add contact
+    const { data: audiences } = await resend.audiences.list();
+    if (audiences?.data?.[0]?.id) {
+      await resend.contacts.create({
+        email,
+        audienceId: audiences.data[0].id,
+      });
+    }
 
     // Send welcome email
     await resend.emails.send({
