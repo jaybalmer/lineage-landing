@@ -37,16 +37,16 @@ export default function Home() {
   return (
     <div className="min-h-screen">
       {/* Nav */}
-      <nav className="sticky top-0 z-50 bg-background/80 backdrop-blur-sm border-b border-border">
-        <div className="max-w-3xl mx-auto px-6 h-14 flex items-center justify-between">
-          <span className="text-sm text-muted tracking-wide">lineage.community</span>
+      <nav className="sticky top-0 z-50 bg-bg-nav border-b border-bg-nav">
+        <div className="max-w-3xl mx-auto px-6 h-12 flex items-center justify-between">
+          <span className="text-sm text-white/60 tracking-wide">lineage.community</span>
         </div>
       </nav>
 
       {/* Wordmark */}
       <section className="max-w-3xl mx-auto px-6 pt-20 md:pt-28">
         <h1 className="text-6xl md:text-8xl lg:text-9xl font-semibold text-foreground tracking-tight">
-          Lineage<span className="text-dot">.</span>
+          Lineage<span className="text-gold">.</span>
         </h1>
       </section>
 
@@ -73,13 +73,13 @@ export default function Home() {
       {/* Value Props */}
       <section className="max-w-3xl mx-auto px-6 pb-20">
         <div className="space-y-10">
-          <div className="border-l-3 border-accent pl-6">
+          <div className="border-l-3 border-foreground pl-6">
             <h2 className="text-xl font-semibold text-foreground">Map your timeline</h2>
             <p className="mt-2 text-muted">
               Log the places, events, people, and gear that shaped your journey.
             </p>
           </div>
-          <div className="border-l-3 border-dot pl-6">
+          <div className="border-l-3 border-gold pl-6">
             <h2 className="text-xl font-semibold text-foreground">
               Find where your lines cross
             </h2>
@@ -88,7 +88,7 @@ export default function Home() {
               with.
             </p>
           </div>
-          <div className="border-l-3 border-accent pl-6">
+          <div className="border-l-3 border-foreground pl-6">
             <h2 className="text-xl font-semibold text-foreground">
               Build something collective
             </h2>
@@ -109,7 +109,7 @@ export default function Home() {
           </p>
 
           {status === "success" ? (
-            <div className="mt-6 p-4 bg-accent/5 border border-accent/20 rounded-lg">
+            <div className="mt-6 p-4 bg-gold/5 border border-gold/20 rounded-lg">
               <p className="text-foreground font-medium">
                 You&rsquo;re on the list.
               </p>
@@ -125,7 +125,7 @@ export default function Home() {
                 placeholder="you@email.com"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
-                className="flex-1 px-4 py-3 rounded-lg border border-border bg-background text-foreground placeholder:text-muted/60 focus:outline-none focus:ring-2 focus:ring-accent/40"
+                className="flex-1 px-4 py-3 rounded-lg border border-border bg-background text-foreground placeholder:text-muted/60 focus:outline-none focus:ring-2 focus:ring-gold/40"
               />
               <button
                 type="submit"
