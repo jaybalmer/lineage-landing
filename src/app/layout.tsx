@@ -4,7 +4,7 @@ import "./globals.css";
 export const metadata: Metadata = {
   title: "Lineage. Community Timelines",
   description:
-    "Lineage is a new kind of social platform where people build personal timelines of their journey through a community — and together, those timelines form a collective history.",
+    "Lineage is a new kind of social platform where people build personal timelines of their journey through a community. Together, those timelines form a collective history.",
   openGraph: {
     title: "Lineage. Community Timelines",
     description:

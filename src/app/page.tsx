@@ -59,7 +59,7 @@ export default function Home() {
         </p>
         <p className="mt-6 text-lg md:text-xl text-muted leading-relaxed max-w-2xl">
           Lineage is a new kind of social platform where people build personal timelines of
-          their journey through a community — and together, those timelines form a collective
+          their journey through a community. Together, those timelines form a collective
           history that connects us.
         </p>
         <a
@@ -93,7 +93,7 @@ export default function Home() {
               Build something collective
             </h2>
             <p className="mt-2 text-muted">
-              Individual timelines weave into a shared community record — richer with every
+              Individual timelines weave into a shared community record, richer with every
               contributor.
             </p>
           </div>

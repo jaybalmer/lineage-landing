@@ -29,12 +29,12 @@ export async function POST(request: Request) {
     await resend.emails.send({
       from: "Jay <jay@lineage.community>",
       to: email,
-      subject: "You're in — welcome to Lineage",
-      text: `Thanks for signing up. Lineage is a community platform I'm building to help people map the timelines of their lives inside the communities they love — starting with snowboarding.
+      subject: "You're in. Welcome to Lineage",
+      text: `Thanks for signing up. Lineage is a community platform I'm building to help people map the timelines of their lives inside the communities they love, starting with snowboarding.
 
 I'll keep you posted as we get closer to launch.
 
-— Jay`,
+Jay`,
     });
 
     return NextResponse.json({ success: true });
